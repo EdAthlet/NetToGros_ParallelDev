@@ -1,5 +1,9 @@
 # 🇮🇪 Irish Payroll Calculator
 
+[![CI](https://github.com/EdAthlet/NetToGros_ParallelDev/actions/workflows/ci.yml/badge.svg)](https://github.com/EdAthlet/NetToGros_ParallelDev/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/EdAthlet/NetToGros_ParallelDev?style=social)](https://github.com/EdAthlet/NetToGros_ParallelDev/stargazers)
+
 A comprehensive, accurate, and user-friendly Irish payroll calculator that helps you understand your take-home pay with detailed tax breakdowns. Calculate both **Gross to Net** (employee perspective) and **Net to Gross** (employer perspective) with precision. Built with modern web technologies and updated for 2024-2026 Irish tax rates.
 
 ## ✨ Features
