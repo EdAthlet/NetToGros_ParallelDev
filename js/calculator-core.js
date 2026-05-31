@@ -124,6 +124,7 @@ let PAYE_RATES, USC_RATES, PRSI_RATES, TAX_CREDITS;
  * Updates the current tax rates based on the selected tax year.
  * @param {string} year - The tax year ("2024", "2025", or "2026")
  */
+/* eslint-disable no-unused-vars */
 function updateTaxRatesForYear(year) {
     const rates = TAX_RATES[year] || TAX_RATES[2024];
     PAYE_RATES = rates.PAYE_RATES;
@@ -192,6 +193,7 @@ function calculatePAYE(grossIncome, status = 'single') {
  * @param {number} grossIncome - Annual gross salary
  * @returns {object} USC result with total, bands, and exemption status
  */
+/* eslint-disable no-unused-vars */
 function calculateUSC(grossIncome) {
     if (grossIncome < 13000) {
         return 0;
@@ -251,6 +253,7 @@ function calculateUSCWithBreakdown(grossIncome) {
     };
 }
 
+/* eslint-disable no-unused-vars */
 function calculatePRSI(grossIncome) {
     const prsiBreakdown = calculatePRSIWithBreakdown(grossIncome);
     return prsiBreakdown.total;
