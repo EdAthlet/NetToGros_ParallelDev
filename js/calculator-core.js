@@ -120,6 +120,10 @@ const TAX_RATES = {
 // Current tax rates (updated based on selected year)
 let PAYE_RATES, USC_RATES, PRSI_RATES, TAX_CREDITS;
 
+/**
+ * Updates the current tax rates based on the selected tax year.
+ * @param {string} year - The tax year ("2024", "2025", or "2026")
+ */
 function updateTaxRatesForYear(year) {
     const rates = TAX_RATES[year] || TAX_RATES[2024];
     PAYE_RATES = rates.PAYE_RATES;
@@ -148,6 +152,12 @@ function get2026PRSIRate() {
     return selected2026Period === 'jan-sep' ? 0.042 : 0.0435;
 }
 
+/**
+ * Calculates PAYE tax based on gross income and tax status.
+ * @param {number} grossIncome - Annual gross salary
+ * @param {string} [status="single"] - Tax status (single, married, singleParent, manual)
+ * @returns {number} PAYE tax amount rounded to 3 decimals
+ */
 function calculatePAYE(grossIncome, status = 'single') {
     let standardBand;
 
@@ -177,6 +187,11 @@ function calculatePAYE(grossIncome, status = 'single') {
     return roundToThree(Math.max(0, paye));
 }
 
+/**
+ * Calculates Universal Social Charge (USC) with band breakdown.
+ * @param {number} grossIncome - Annual gross salary
+ * @returns {object} USC result with total, bands, and exemption status
+ */
 function calculateUSC(grossIncome) {
     if (grossIncome < 13000) {
         return 0;
