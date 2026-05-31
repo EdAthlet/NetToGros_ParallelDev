@@ -1,14 +1,41 @@
 {
-  "name": "nettogross-ireland",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Irish payroll calculator and software — NetToGross",
+  "name": "nettogross-paralleldev",
+  "version": "0.2.0",
+  "private": false,
+  "description": "🇮🇪 Irish payroll calculator (NetToGros) - Parallel development version with multi-company support and advanced features",
   "type": "module",
+  "author": "EdAthlet",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdAthlet/NetToGros_ParallelDev.git"
+  },
+  "homepage": "https://github.com/EdAthlet/NetToGros_ParallelDev",
+  "bugs": {
+    "url": "https://github.com/EdAthlet/NetToGros_ParallelDev/issues"
+  },
+  "keywords": [
+    "ireland",
+    "payroll",
+    "tax",
+    "paye",
+    "usc",
+    "prsi",
+    "net-to-gross",
+    "gross-to-net",
+    "calculator",
+    "paralleldev"
+  ],
   "scripts": {
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "format": "prettier --write \"**/*.{js,html,css,json,md}\""
   },
   "devDependencies": {
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.5",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.0"
   }
 }

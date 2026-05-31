@@ -51,10 +51,10 @@ Calculate your salary across different pay frequencies:
 ### Option 2: Local Development Server
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/irish-payroll-calculator.git
+git clone https://github.com/EdAthlet/NetToGros_ParallelDev.git
 
 # Navigate to the directory
-cd irish-payroll-calculator
+cd NetToGros_ParallelDev
 
 # Start a local server (Python example)
 python -m http.server 8000
@@ -221,8 +221,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Need Help?**
 - 📧 **Email**: [your-email@example.com]
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/irish-payroll-calculator/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/irish-payroll-calculator/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/EdAthlet/NetToGros_ParallelDev/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/EdAthlet/NetToGros_ParallelDev/discussions)
 
 ---
 
